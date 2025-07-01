@@ -1,0 +1,447 @@
+/* Estilos generales para la página Nosotros */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #3498db;
+    margin: 15px auto 0;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+/* Hero Section */
+.hero-nosotros {
+    background-image: url(../images/BannerCategoriasKohler-Cocina.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1,
+.hero-content p {
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 1s forwards;
+}
+
+.hero-content h1 {
+    animation-delay: 0.3s;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    animation-delay: 0.6s;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Definición de la animación */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Historia Section */
+.historia-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.historia-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.historia-text {
+    flex: 1;
+}
+
+.historia-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+.historia-image {
+    flex: 1;
+}
+
+.historia-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.historia-text .final {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+strong {
+    color: #8b0000;
+}
+
+em {
+    color: #c0392b;
+    font-style: italic;
+}
+
+/* Valores Section */
+.valores-section {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.valor-card {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.valor-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    border-radius: 50%;
+}
+
+.valor-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.valor-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.valor-card p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Proceso Section */
+.proceso-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.proceso-steps {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.proceso-steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 100%;
+    width: 4px;
+    background: #3498db;
+    z-index: 1;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+}
+
+.step-content h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.step-content p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Equipo Section */
+.equipo-section {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #3498db;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.position {
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.bio {
+    color: #7f8c8d;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Testimonios Section */
+.testimonios-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonios-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonio {
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+.testimonio-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.testimonio-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+    position: relative;
+    padding-left: 30px;
+}
+
+.testimonio-content p::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 3rem;
+    color: #3498db;
+    opacity: 0.3;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+}
+
+.client-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.client-info h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.client-info p {
+    color: #7f8c8d;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.client-info p::before {
+    content: none;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}

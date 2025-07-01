@@ -1,0 +1,256 @@
+/* Hero Section */
+.hero-contact {
+    background-image: url(../images/Banner_contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1,
+.hero-content p {
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 1s forwards;
+}
+
+.hero-content h1 {
+    animation-delay: 0.3s;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    animation-delay: 0.6s;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Definición de la animación */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 100px;
+    padding: 10px;
+}
+
+/* Header del formulario */
+.contact-header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-header h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #3498db;
+    margin: 15px auto 0;
+}
+
+.contact-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Contenedor principal */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Información de contacto */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.contact-info h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+}
+
+.info-group {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-icon {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #3498db;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.info-content p,
+.info-content a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-content a:hover {
+    text-decoration: underline;
+}
+
+.business-hours {
+    margin-top: 40px;
+}
+
+/* Formulario */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.checkbox-container {
+    display: flex;
+    padding: 15px;
+    max-width: 400px;
+}
+
+.checkbox-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.checkbox-column label {
+    font-weight: normal;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.btn-submit {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}

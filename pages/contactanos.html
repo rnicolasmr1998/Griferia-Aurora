@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONTACTO - GRIFERÍA AURORA</title>
+  <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/contactanos.css" />
+  <style></style>
+</head>
+
+<body>
+  <header class="container-header">
+    <div class="flex logo-search">
+      <h1>
+        <a href="../index.html">
+          <img src="../images/logo.png" alt="" width="180" />
+        </a>
+      </h1>
+      <input type="search" placeholder="Buscar..." />
+      <ul class="flex icons-social">
+        <li>
+          <a href="#">
+            <img src="../images/icons/icons-facebook.svg" alt="Icono de Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/icons/icons-instagram.svg" alt="Icono de Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/icons/icons-tik-tok.svg" alt="Icono de Tiktok" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/icons/icons-youtube.svg" alt="Icono de Youtube" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pages/categorias.html">Categorías</a></li>
+        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+        <li><a href="../pages/locales.html">Locales</a></li>
+        <li><a href="../pages/blog.html">Blog</a></li>
+        <li><a href="../pages/contactanos.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero-contact">
+    <div class="hero-content">
+      <h1>Grifería Aurora</h1>
+      <p>Deja que nuestros detalles elevan tu estilo.</p>
+    </div>
+  </div>
+  <div class="contact-header">
+    <h1>Contáctenos para Ventas al por Mayor</h1>
+    <p>
+      Complete el siguiente formulario y nuestro equipo comercial se pondrá
+      en contacto con usted para ofrecerle las mejores condiciones para su
+      negocio.
+    </p>
+  </div>
+  <div class="container">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Información de Contacto</h2>
+
+        <div class="info-group">
+          <div class="info-icon">📍</div>
+          <div class="info-content">
+            <h3>Dirección</h3>
+            <p>Av. Gral. Eugenio Garzón 658, Jesús Maria</p>
+            <p>Av. Agustín de la Rosa Toro 1250, San Borja</p>
+            <p>Av. San Fernando 196, Surquillo</p>
+          </div>
+        </div>
+
+        <div class="info-group">
+          <div class="info-icon">📞</div>
+          <div class="info-content">
+            <h3>Teléfonos</h3>
+            <a href="tel:+51987654321">(+51) 987 654 321</a>
+            <a href="tel:+51987654322">(+51) 987 654 322</a>
+          </div>
+        </div>
+
+        <div class="info-group">
+          <div class="info-icon">✉️</div>
+          <div class="info-content">
+            <h3>Correo Electrónico</h3>
+            <a href="mailto:ventas@distribuidoraaurora.com">ventas@distribuidoraaurora.com</a>
+            <a href="mailto:pedidos@distribuidoraaurora.com">pedidos@distribuidoraaurora.com</a>
+          </div>
+        </div>
+
+        <div class="business-hours">
+          <div class="info-group">
+            <div class="info-icon">⏰</div>
+            <div class="info-content">
+              <h3>Horario de Atención</h3>
+              <p>Lunes a Viernes: 8:00 am - 6:00 pm</p>
+              <p>Sábados: 9:00 am - 1:00 pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="mayoristaForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo*</label>
+              <input type="text" id="nombre" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa*</label>
+              <input type="text" id="empresa" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo Electrónico*</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono/Celular*</label>
+              <input type="tel" id="telefono" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="rubro">Rubro de su Negocio*</label>
+            <select id="rubro" class="form-control" required>
+              <option value="" disabled selected>
+                Seleccione una opción
+              </option>
+              <option value="bodega">Bodega/MiniMarket</option>
+              <option value="restaurante">Restaurante/Cafetería</option>
+              <option value="hotel">Hotel/Hostal</option>
+              <option value="constructora">Constructora/Inmobiliaria</option>
+              <option value="distribuidor">Distribuidor Minorista</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="productos">Productos de Interés*</label>
+            <div class="checkbox-container">
+              <div class="checkbox-column">
+                <label><input type="checkbox" name="productos[]" value="inodoros" />
+                  Inodoros</label>
+                <label><input type="checkbox" name="productos[]" value="lavaderos" />
+                  Lavaderos</label>
+                <label><input type="checkbox" name="productos[]" value="lavatorios" />
+                  Lavatorios</label>
+              </div>
+              <div class="checkbox-column">
+                <label><input type="checkbox" name="productos[]" value="duchas" />
+                  Duchas</label>
+                <label><input type="checkbox" name="productos[]" value="tubo" />
+                  Tubo de abasto</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje o Consulta Específica*</label>
+            <textarea id="mensaje" class="form-control" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" required /> Acepto recibir información
+              comercial y promociones
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar Solicitud</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-box">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h4>Te ayudamos</h4>
+          <ul>
+            <li><a href="#">Libro de reclamaciones</a></li>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Servicio al cliente</a></li>
+            <li><a href="#">Tipos de entrega</a></li>
+            <li><a href="#">Estado del pedido</a></li>
+            <li><a href="#">Cambios y Devoluciones</a></li>
+            <li><a href="#">Boletas y Facturas</a></li>
+            <li><a href="#">Danos tu opinión</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Nuestra empresa</h4>
+          <ul>
+            <li><a href="#">Nuestra historia</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Sostenibilidad</a></li>
+            <li><a href="#">Canal de integridad</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Locales</h4>
+          <ul>
+            <li><a href="#">Jesús Maria</a></li>
+            <li><a href="#">San Borja</a></li>
+            <li><a href="#">Surquillo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Suscríbete</h4>
+          <p>Recibe nuestras novedades y promociones:</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="ejemplo@correo.com" required />
+            <button type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Términos y condiciones</a>
+          <a href="#">Política de cookies</a>
+          <a href="#">Política de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="../js/formulario.js"></script>
+</body>
+
+</html>

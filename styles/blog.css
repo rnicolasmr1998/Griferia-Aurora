@@ -1,0 +1,308 @@
+/* Hero Section */
+.hero-blog {
+    background-image: url(../images/capacitacion_portada\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-blog-content h1,
+.hero-blog-content p {
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 1s forwards;
+}
+
+.hero-blog-content h1 {
+    animation-delay: 0.3s;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-blog-content p {
+    animation-delay: 0.6s;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Definición de la animación */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*VIDEOS DE AYUDA*/
+.help-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.help-videos h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.help-videos h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+}
+
+.help-videos .video-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 10px 0;
+}
+
+.video-flex .video-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 0;
+}
+
+.video-item h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 0;
+    color: #2c3e50;
+}
+
+/*PREGUNTAS FRECUENTES*/
+.faq-section {
+    width: 100%;
+    margin: 0 auto 3rem auto;
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    /* Alineación del texto */
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.faq-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 1rem;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+.faq-item h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    color: #2980b9;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    padding-left: 25px;
+}
+
+/*RECURSOS ÚTILES*/
+.useful-resources {
+    width: 100%;
+    overflow: hidden;
+    background: #f4f6f7;
+    text-align: center;
+}
+
+.useful-resources h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.useful-resources h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+}
+
+
+.useful-resources ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.useful-resources li a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.useful-resources li a:hover {
+    background-color: #2471a3;
+    transform: translateY(-3px);
+}
+
+/*FORMULARIO DE CONSULTA*/
+.contact-form {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.contact-form h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 50%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  align-self: center;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
