@@ -1,0 +1,142 @@
+/* Hero Section */
+.hero-category {
+    background-image: url(../images/banner_contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1,
+.hero-content p {
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 1s forwards;
+}
+
+.hero-content h1 {
+    animation-delay: 0.3s;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    animation-delay: 0.6s;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Definición de la animación */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Productos*/
+.container-products {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sidebar {
+  width: 200px;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #e6e6e6;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+}
+
+.category-list li button:hover {
+  background-color: #d4d4d4;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.product-card {
+  border: 1px solid #002a5c;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.product-card h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.btn-vermas {
+  background-color: #ffc800;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-vermas:hover {
+  background-color: #e0b700;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}

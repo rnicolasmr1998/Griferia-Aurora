@@ -28,7 +28,7 @@ main {
 
   /**/
   --primary-text-color: #FFFFFF;
-  --second-text-color: #007bff;
+  --second-text-color: #f3eae8;
   
 }
 
@@ -77,6 +77,11 @@ header {
   color: var(--second-text-color); /* Color al pasar el mouse */
 }
 
+.nav-list li a.active {
+  color: #f3eae8; /* Puedes definir --accent-color como el color que quieras */
+  font-weight: 700; /* Opcional: más grueso que los otros */
+  border-bottom: 2px solid #f3eae8; /* O cualquier otro detalle visual */
+}
 
 /*FOOTER*/
 .footer {
